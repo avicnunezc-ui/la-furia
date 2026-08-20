@@ -1,0 +1,24 @@
+---
+interface Props {
+  titulo: string;
+  autora: string;
+  presentacion: string;
+}
+
+const { titulo, autora, presentacion } = Astro.props;
+---
+
+<header class="encabezado">
+  <div class="ruido-decorativo" aria-hidden="true"></div>
+
+  <div class="encabezado-contenido">
+    <p class="etiqueta">Obra literaria</p>
+    <h1>{titulo}</h1>
+    <p class="autora">{autora}</p>
+    <p class="presentacion">{presentacion}</p>
+
+    <a href="/interpretaciones" class="boton boton-principal">
+      Explorar interpretaciones
+    </a>
+  </div>
+</header>

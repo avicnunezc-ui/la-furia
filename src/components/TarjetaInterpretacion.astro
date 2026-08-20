@@ -1,0 +1,44 @@
+---
+interface Props {
+  numero: number;
+  criterio: string;
+  interpretacion: string;
+  evidencia: string;
+  argumentacion: string;
+}
+
+const {
+  numero,
+  criterio,
+  interpretacion,
+  evidencia,
+  argumentacion
+} = Astro.props;
+---
+
+<article class="tarjeta-interpretacion">
+  <div class="numero-interpretacion">0{numero}</div>
+
+  <h2>{criterio}</h2>
+
+  <details open>
+    <summary>Interpretación</summary>
+    <div class="contenido-desplegable">
+      <p>{interpretacion}</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Evidencia</summary>
+    <div class="contenido-desplegable">
+      <blockquote>{evidencia}</blockquote>
+    </div>
+  </details>
+
+  <details>
+    <summary>Argumentación</summary>
+    <div class="contenido-desplegable">
+      <p>{argumentacion}</p>
+    </div>
+  </details>
+</article>

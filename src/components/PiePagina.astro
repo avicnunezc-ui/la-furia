@@ -1,0 +1,12 @@
+---
+interface Props {
+  titulo: string;
+  autora: string;
+}
+
+const { titulo, autora } = Astro.props;
+---
+
+<footer class="pie-pagina">
+  <p>{titulo} — {autora}</p>
+</footer>

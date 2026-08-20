@@ -1,0 +1,64 @@
+---
+import DisposicionBase from "../layouts/DisposicionBase.astro";
+import TarjetaInterpretacion from "../components/TarjetaInterpretacion.astro";
+import PiePagina from "../components/PiePagina.astro";
+
+const interpretaciones = [
+  {
+    numero: 1,
+    criterio: "Psicológico",
+    interpretacion: "Winifred representa a una persona con razgos de psicopatía, incluso ya el padecimiento en si.",
+    evidencia: `textual no mucho, pero dios mio, todo el texto trata de que Winifred está loca, recapitulo:
+quemó a su amiga (murió alli mismo).
+explotó al máximo los traumas de una de sus amigas hasta generarle traumas.
+abandonó al "niño" al que cuidaba con su amante.
+en ningún, NINGÚN momento mostró alguna pizca de verdadera culpa, solamente la mostró para darle pena al protagonista.`,
+    argumentacion: "Winifred está loca, una total psicopata, realiza actos macabros y crueles sin pena alguna y no duda en realizar dichas acciones, es como si disfrutara de ello."
+  },
+  {
+    numero: 2,
+    criterio: "amor ciego",
+    interpretacion: "El protagonista estába desesperado por tener algo con Winifred, ignorando la mala persona que era.",
+    evidencia: `"ahora entiendo que solo quería redimirse por sus 2 amigas, cometiendo mayores crueldades con las demás personas"
+Él sabía a lo que se estaba metiendo, sabía el tipo de persona que era, escucho sus historias, y aún así el seguía allí, todo un migajero el amigo, todo para que después lo abandonaran.`,
+    argumentacion: `Él ya sabía, aún se quedo.
+el la amaba, pero estaba cegado, no podia ver el malvado ser con el que se quería emparejar.
+Se dice explicito como el chico se da cuenta de que las verdaderas intenciones de winifred era jugar con el todo el tiempo mientras ella lo manipulaba.`
+  },
+  {
+    numero: 3,
+    criterio: "condiciones mentales",
+    interpretacion: 'el "niño" que winifred cuidaba, presentaba signos o incluso padencias mentales.',
+    evidencia: `"¿y si le quitamos el tambor?...-tendría un ataque de nervios"
+"por qué no le sacamos el tambor y se lo tiramos al lago?-me aventuré a decir- me aturde el ruido"
+en el texto el "niño tiene 21"`,
+    argumentacion: `el "niño" de 21 años esta super pegado a un tambor, lo golpea siempre, super fijado en el y solo en el. Si se lo quitan le da un ataque de nervios si se lo quitan. Lo probable es que, por como se retrata y comporta en la obra, tendría tea.`
+  }
+];
+---
+
+<DisposicionBase titulo="Interpretaciones — La furia">
+  <main class="contenido-principal">
+    <header class="cabecera-pagina">
+      <p class="etiqueta-seccion">Análisis</p>
+      <h1>Tres interpretaciones</h1>
+      <p>Abre cada apartado para explorar la información.</p>
+    </header>
+
+    <section class="rejilla-interpretaciones" aria-label="Interpretaciones literarias">
+      {interpretaciones.map((interpretacion) => (
+        <TarjetaInterpretacion
+          numero={interpretacion.numero}
+          criterio={interpretacion.criterio}
+          interpretacion={interpretacion.interpretacion}
+          evidencia={interpretacion.evidencia}
+          argumentacion={interpretacion.argumentacion}
+        />
+      ))}
+    </section>
+
+    <a href="/obra" class="enlace-regreso">Volver a la obra</a>
+  </main>
+
+  <PiePagina titulo="La furia" autora="Silvina Ocampo" />
+</DisposicionBase>

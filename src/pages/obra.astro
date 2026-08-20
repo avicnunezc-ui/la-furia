@@ -1,0 +1,68 @@
+---
+import DisposicionBase from "../layouts/DisposicionBase.astro";
+import PiePagina from "../components/PiePagina.astro";
+
+const presentacion = `Trata sobre un hombre que conoce a una mujer llamada Winifred, quien cuida a un niño que siempre toca un tambor.
+Mientras se conocen, Winifred le cuenta historias de su infancia que revelan su crueldad y su inestabilidad mental.
+Al final, el protagonista descubre que Winifred lo ha manipulado y comprende que era una mujer perturbada.`;
+---
+
+<DisposicionBase titulo="La obra — La furia">
+  <main class="contenido-principal pagina-obra">
+    <header class="cabecera-pagina">
+      <p class="etiqueta-seccion">Información</p>
+      <h1>La obra</h1>
+    </header>
+
+    <section class="panel-obra">
+      <div class="ficha-obra">
+        <span>Título</span>
+        <strong>La furia</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Autor o autora</span>
+        <strong>Silvina Ocampo</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Género literario</span>
+        <strong>cuento</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Ambiente o espacio principal</span>
+        <strong>parque</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Atmósfera predominante</span>
+        <strong>urbano, cotidiano, siniestro</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Tema principal</span>
+        <strong>manipulación</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Símbolos, objetos o elementos importantes</span>
+        <strong>el cesped, tambor, alas</strong>
+      </div>
+
+      <div class="ficha-obra">
+        <span>Sensación</span>
+        <strong>tension</strong>
+      </div>
+    </section>
+
+    <section class="presentacion-obra">
+      <h2>Presentación</h2>
+      <p>{presentacion}</p>
+    </section>
+
+    <a href="/interpretaciones" class="boton">Ir a las interpretaciones</a>
+  </main>
+
+  <PiePagina titulo="La furia" autora="Silvina Ocampo" />
+</DisposicionBase>

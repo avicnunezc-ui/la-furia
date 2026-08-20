@@ -1,0 +1,51 @@
+---
+import DisposicionBase from "../layouts/DisposicionBase.astro";
+import Encabezado from "../components/Encabezado.astro";
+import PiePagina from "../components/PiePagina.astro";
+
+const presentacion = `Trata sobre un hombre que conoce a una mujer llamada Winifred, quien cuida a un niño que siempre toca un tambor.
+Mientras se conocen, Winifred le cuenta historias de su infancia que revelan su crueldad y su inestabilidad mental.
+Al final, el protagonista descubre que Winifred lo ha manipulado y comprende que era una mujer perturbada.`;
+---
+
+<DisposicionBase titulo="La furia — Silvina Ocampo">
+  <Encabezado
+    titulo="La furia"
+    autora="Silvina Ocampo"
+    presentacion={presentacion}
+  />
+
+  <main class="contenido-principal">
+    <section class="bloque-introduccion">
+      <p class="etiqueta-seccion">Una lectura en tres partes</p>
+      <h2>Entra en la obra</h2>
+      <p>
+        El sitio reúne la información de la obra y las tres interpretaciones.
+      </p>
+
+      <div class="acciones">
+        <a href="/obra" class="boton">Conocer la obra</a>
+        <a href="/interpretaciones" class="boton boton-secundario">
+          Ver análisis
+        </a>
+      </div>
+    </section>
+
+    <section class="franja">
+      <div>
+        <span class="simbolo">01</span>
+        <p>La obra</p>
+      </div>
+      <div>
+        <span class="simbolo">02</span>
+        <p>Interpretaciones</p>
+      </div>
+      <div>
+        <span class="simbolo">03</span>
+        <p>Evidencias</p>
+      </div>
+    </section>
+  </main>
+
+  <PiePagina titulo="La furia" autora="Silvina Ocampo" />
+</DisposicionBase>
