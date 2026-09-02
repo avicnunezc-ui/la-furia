@@ -4,6 +4,7 @@ Sitio estático dividido en varias páginas:
 
 - `/` — Inicio
 - `/obra` — Información de la obra
+- `/autora` — Información sobre Silvina Ocampo
 - `/interpretaciones` — Tres interpretaciones
 
 Incluye componentes Astro, CSS Grid, Flexbox, variables CSS, elementos desplegables con `details` y `summary`, y movimiento sutil mediante CSS.

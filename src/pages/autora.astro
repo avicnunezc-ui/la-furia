@@ -1,0 +1,57 @@
+---
+import DisposicionBase from "../layouts/DisposicionBase.astro";
+import PiePagina from "../components/PiePagina.astro";
+---
+
+<DisposicionBase titulo="Silvina Ocampo — La furia">
+  <main class="contenido-principal pagina-autora">
+    <header class="cabecera-pagina cabecera-autora">
+      <div class="retrato-autora">
+        <img src="/silvina-ocampo.png" alt="Retrato de Silvina Ocampo" />
+      </div>
+
+      <div class="datos-autora">
+        <p class="etiqueta-seccion">La autora</p>
+        <h1>Silvina Ocampo</h1>
+        <p class="subtitulo-autora">Escritora argentina</p>
+      </div>
+    </header>
+
+    <section class="rejilla-autora" aria-label="Información sobre Silvina Ocampo">
+      <article class="tarjeta-autora">
+        <span>1903</span>
+        <h2>Nacimiento</h2>
+        <p>Nació el 28 de julio de 1903 en Buenos Aires, Argentina.</p>
+      </article>
+
+      <article class="tarjeta-autora">
+        <span>1937</span>
+        <h2>Primer libro de cuentos</h2>
+        <p>Su primer libro de cuentos fue <cite>Viaje olvidado</cite>, publicado en 1937.</p>
+      </article>
+
+      <article class="tarjeta-autora">
+        <span>Sur</span>
+        <h2>Literatura</h2>
+        <p>Formó parte del grupo fundador de la revista <cite>Sur</cite>, creada por su hermana Victoria Ocampo.</p>
+      </article>
+
+      <article class="tarjeta-autora">
+        <span>Arte</span>
+        <h2>Formación</h2>
+        <p>Antes de consolidar su trayectoria literaria, estudió dibujo en París con Giorgio de Chirico y Fernand Léger.</p>
+      </article>
+    </section>
+
+    <section class="bloque-biografia">
+      <p class="etiqueta-seccion">Trayectoria</p>
+      <h2>Sobre Silvina Ocampo</h2>
+      <p>Silvina Ocampo fue una escritora argentina que desarrolló una obra vinculada al cuento y la poesía. Su trayectoria estuvo relacionada con el ambiente literario de la revista <cite>Sur</cite>. También estuvo casada con el escritor Adolfo Bioy Casares.</p>
+      <p>Su biblioteca personal, compartida con Bioy Casares, forma parte del acervo de la Biblioteca Nacional de Argentina y está disponible para consulta pública.</p>
+    </section>
+
+    <a href="/obra" class="boton">Volver a la obra</a>
+  </main>
+
+  <PiePagina titulo="La furia" autora="Silvina Ocampo" />
+</DisposicionBase>
